@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    
+<html>
+<head>
+    <meta charset='utf-8'>
+    <Title>Kevinz Site</Title>
+    <link href="styles/reset.css" type="text/css" rel="stylesheet">
+    <link href="styles/stylesheet1.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery.2.2.0/jquery/min.js'></script>
+</head>
+<body>
+  <div class="Header">
+    <h>Kevin's 338 Web Site!</h>
+  </div>
+  <div class="doubleempty">
+<!--     <>white space x 2 -->
+  </div>
+  <div class="llamabox">
+    <img src='pix/llamabw.png'></div>
+  <div class='llamabox'>
+    <img src='pix/llama3.png'>    
+    </div>
+  <div class='llamabox'>
+    <img src='pix/llama2.png'>
+    </div>
+  <div class="prof">
+  	<h><a href="prof.html">Professional</a></h></div>
+  <div class="pers">
+    <h><a href="pers.html">Personal</a></h>
+  </div>
+  <div class="etc">
+    <h><a href="contact.html">Contact Me</a></h>
+  </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $('.llamabox').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed:2000,
+  });
+});
+    </script>
+</body>
+</html>

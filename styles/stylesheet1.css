@@ -1,0 +1,138 @@
+body {
+	height: auto;
+	width: auto;
+}
+h, p, ul li {
+	color: black;
+	font-size: .8em;
+	font-family: 'Blackoak Std', sans-serif;
+}
+.Header {
+	font-size: 1.2em;
+/*	background-color:black;*/
+	height: 100px;
+	width: 500px;
+	position:relative;
+	text-align:right;
+	border-radius: 15px 30px 30px 5px;
+}
+.llamabox img {
+	height: 150px;
+	width: 275px;
+	margin-left: -30px;
+/*	background-image: url(../pix/llamabw.png);*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	float:left;
+    border-radius: 50%;
+/*
+	position:fixed;
+	display:inline;
+*/
+}
+.empty {
+	background-color: #fff;
+	float:left;
+	height: 75px;
+	width: 300px;
+	position:relative;
+	display:inline;
+}
+.doubleempty {
+	background-color: #fff;
+	height: 150px;
+	width: 400px;
+	float:left;
+	position:relative;
+	display:inline;
+}
+.prof {
+	background-color:black;
+	height: 150px;
+	width: 300px;
+	margin-left:-50px;
+	float:right;
+	text-align:center;
+	position:relative;
+	display:inline;
+}
+.pers {
+	background-color: #99F;
+	float: left;
+	height: 100px;	
+	width: 300px;
+	text-align: center;
+	position:relative;
+	display:inline;
+}
+.etc {
+	background-color: black;
+	height: 50px;	
+	width: 300px;
+	float:left;
+	text-align:center;
+	position:relative;
+	display:inline;
+}
+#nav {
+	text-decoration: none;
+	background-color:black;
+	font-size:.8em;
+	line-height:1.3em;
+}
+a:link {
+	text-decoration: none;
+}
+a:hover {
+	color:black;
+	opacity:.5;
+    font-size:2em;
+    background-color:hotpink;
+    outline: 2px solid black;
+}
+a:visited{
+    color:#666;
+}
+.perspage {
+	background-image: url(../pix/personalinterests.png);
+	background-size:contain;
+	background-repeat:repeat-x;
+	width:100%;
+	height:5em;
+}
+h.persinformations {
+	color: #000;
+	font-size: 1.5em;
+	text-indent:-2em;
+}
+p.persinformations {
+	color: #666;
+	font-size:1em;
+	margin-left: 2.5em;
+	font-family: "Comic Sans MS", cursive;
+	line-height:1.3em;
+}
+h.resume {
+    color:black !important;
+}
+a img {
+    width:50%;
+    height:50%;
+}
+@media only screen and (max-width:768px) {
+    .Header {
+        text-align:left;
+        max-width: 768px;
+        background-color:aqua;
+    }   
+}
+@media only screen and (min-width:768px) {
+    .Header {
+        width: 100%;
+    }
+    
+    a:hover {
+        font-size:2.5em;
+        background-color:greenyellow;
+    }
+}
