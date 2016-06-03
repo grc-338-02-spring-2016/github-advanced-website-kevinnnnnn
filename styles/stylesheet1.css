@@ -9,47 +9,48 @@ h, p, ul li {
 }
 .Header {
 	font-size: 1.2em;
-/*	background-color:black;*/
 	height: 100px;
 	width: 500px;
 	position:relative;
 	text-align:right;
 	border-radius: 15px 30px 30px 5px;
 }
-.llamabox img {
-	height: 150px;
-	width: 275px;
-	margin-left: -30px;
-/*	background-image: url(../pix/llamabw.png);*/
-	background-size: cover;
+.llamabox{
+	height: 15em;
+	width: 15em;
+    position:absolute;
+    display: inline-block;
+}
+img.llamabox{
+    width:inherit;
+    height:inherit;
+}
+#l1 {
+    background-size: cover;
+	background-repeat:no-repeat;
+}
+#l2 {
+    background-size: cover;
 	background-repeat: no-repeat;
-	float:left;
-    border-radius: 50%;
-/*
-	position:fixed;
-	display:inline;
-*/
+}
+#l3 {
+    background-size: cover;
+	background-repeat: no-repeat;
 }
 .empty {
 	background-color: #fff;
-	float:left;
-	height: 75px;
-	width: 300px;
-	position:relative;
-	display:inline;
-}
-.doubleempty {
-	background-color: #fff;
-	height: 150px;
-	width: 400px;
+	height: 6em;
+	width: 5em;
 	float:left;
 	position:relative;
 	display:inline;
+    margin-left:-50px;
 }
 .prof {
 	background-color:black;
 	height: 150px;
 	width: 300px;
+    border-radius:100% 0;
 	margin-left:-50px;
 	float:right;
 	text-align:center;
@@ -61,18 +62,22 @@ h, p, ul li {
 	float: left;
 	height: 100px;	
 	width: 300px;
-	text-align: center;
+    border-radius:100% 0;
+	text-align:right;
 	position:relative;
 	display:inline;
+    margin-left:-50px;
 }
 .etc {
 	background-color: black;
 	height: 50px;	
 	width: 300px;
+    border-radius:100% 0;
 	float:left;
 	text-align:center;
 	position:relative;
 	display:inline;
+    margin-left:-50px;
 }
 #nav {
 	text-decoration: none;
@@ -80,15 +85,20 @@ h, p, ul li {
 	font-size:.8em;
 	line-height:1.3em;
 }
+.bar1 {
+    background-color:azure;
+    height:150px;
+}
 a:link {
 	text-decoration: none;
 }
 a:hover {
 	color:black;
 	opacity:.5;
-    font-size:2em;
-    background-color:hotpink;
-    outline: 2px solid black;
+    background-color:currentColor;
+    outline: 2px dotted black;
+    position:relative;
+    text-align:center;
 }
 a:visited{
     color:#666;
@@ -115,24 +125,35 @@ p.persinformations {
 h.resume {
     color:black !important;
 }
-a img {
+.professional {
     width:50%;
     height:50%;
 }
-@media only screen and (max-width:768px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 736px) {
     .Header {
         text-align:left;
-        max-width: 768px;
+        max-width: inherit;
         background-color:aqua;
-    }   
+    }  
+    div.llamabox{
+        width:35%;
+        height:35%;
+    }
 }
-@media only screen and (min-width:768px) {
+@media only screen and (max-width:1024px){
+    .Header {
+        text-align: center;
+        max-width: inherit;
+    }
+    .etc {
+        margin-left:8em;
+    }
+}
+@media only screen and (min-width:1024px) {
     .Header {
         width: 100%;
     }
-    
-    a:hover {
-        font-size:2.5em;
-        background-color:greenyellow;
+    .etc {
+        margin-left:8em;
     }
 }
